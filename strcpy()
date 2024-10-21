@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+
+void main() 
+{
+    char src[] = "Hello, World!";
+    char dest[50]; // Ensure dest has enough space
+
+    // Copy src to dest
+    strcpy(dest, src);
+
+    // Print the result
+    printf("Copied string: %s\n", dest);
+
+}
