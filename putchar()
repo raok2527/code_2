@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+void main() 
+{
+    char c = 'A';
+
+    // Using putchar to print the character
+    putchar(c);
+    putchar('\n'); // Print a newline for better readability
+
+}
