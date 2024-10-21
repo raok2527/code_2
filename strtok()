@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+
+void main() 
+{
+    char str[] = "Hello, World! Welcome to C programming.";
+    const char *delim = " ,.!"; // Delimiters: space, comma, period, exclamation
+    char *token;
+
+    // Get the first token
+    token = strtok(str, delim);
+
+    // Continue to get tokens until strtok returns NULL
+    while (token != NULL) 
+    {
+        printf("Token: %s\n", token);
+        token = strtok(NULL, delim); // Get the next token
+    }
+ }
