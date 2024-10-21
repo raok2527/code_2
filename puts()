@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+void main() 
+{
+    const char *message = "Hello, World!";
+    
+    // Using puts to print the message
+    puts(message);
+
+}
