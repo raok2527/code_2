@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+void main() 
+{
+    const char *haystack = "Hello, World!";
+    const char *needle = "World";
+
+    // Find the first occurrence of needle in haystack
+    char *result = strstr(haystack, needle);
+
+    if (result != NULL) 
+    {
+        printf("Found substring: %s\n", result);
+    } 
+    else 
+    {
+        printf("Substring not found.\n");
+    }
+
+}
