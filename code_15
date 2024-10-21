@@ -1,0 +1,22 @@
+#include<stdio.h>
+void main()
+{
+  int i=3,*x;
+  float j=1.5,*y;
+  char k='k',*z;
+  printf("i=%d\n",i);
+  printf("j=%f\n",j);
+  printf("k=%c\n",k);
+  x=&i;
+  y=&j;
+  z=&k;
+  printf("x=%u\n",x);
+  printf("y=%u\n",y);
+  printf("z=%u\n",z);
+  x++;
+  y++;
+  z++;
+  printf("x=%u\n",x);
+  printf("y=%u\n",y);
+  printf("z=%u\n",z);
+}
