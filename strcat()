@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+
+void main() 
+{
+    char dest[50] = "Hello, "; // Ensure dest has enough space
+    char src[] = "World!";
+
+    // Concatenate src to dest
+    strcat(dest, src);
+
+    // Print the result
+    printf("Concatenated string: %s\n", dest);
+
+}
