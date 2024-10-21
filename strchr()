@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+void main() 
+{
+    char str[] = "Hello, World!";
+    char c = ',';
+
+    // Find the first occurrence of the character
+    char *ptr = strchr(str, c);
+
+    if (ptr != NULL) 
+    {
+        printf("Character '%c' found at position %ld.\n", c, ptr - str + 1);
+    } 
+    else 
+    {
+        printf("Character '%c' not found in the string.\n", c);
+    }
+
+}
