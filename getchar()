@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+void main() 
+{
+    char c;
+
+    printf("Enter a character: ");
+    
+    // Using getchar to read a single character
+    c = getchar();
+
+    printf("You entered: %c\n", c);
+
+}
